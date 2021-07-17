@@ -47,7 +47,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Raimun.Share\Raimun.Share.csproj" />
+    <ProjectReference Include="..\Raimun.Share\Raimun.Share.csproj" />
   </ItemGroup>
 
 </Project>
