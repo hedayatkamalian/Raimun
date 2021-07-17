@@ -1,0 +1,17 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "composeLaunchServiceName": "raimun",
+      "serviceActions": {
+        "raimun": "StartDebugging",
+        "raimun.consoleapp": "StartDebugging",
+        "database": "StartWithoutDebugging",
+        "rabbitmq": "StartWithoutDebugging"
+      },
+      "composeLaunchAction": "LaunchBrowser",
+      "commandVersion": "1.0",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger"
+    }
+  }
+}

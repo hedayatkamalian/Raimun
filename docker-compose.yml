@@ -1,0 +1,31 @@
+version: '3.4'
+
+services:
+  raimun.consoleapp:
+    image: ${DOCKER_REGISTRY-}raimunconsoleapp
+    build:
+      context: .
+      dockerfile: Raimun.consoleapp/Dockerfile
+
+  raimun:
+    image: ${DOCKER_REGISTRY-}raimun
+    build:
+      context: .
+      dockerfile: Raimun/Dockerfile
+
+  database:
+    container_name: database
+    image: postgres:latest
+    ports: 
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=raimun
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: 'rabbitmq'
+    ports:
+        - 5672:5672
+        - 15672:15672
+

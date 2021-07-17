@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Raimun.consoleapp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

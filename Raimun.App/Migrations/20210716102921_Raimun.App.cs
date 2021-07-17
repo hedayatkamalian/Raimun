@@ -1,0 +1,17 @@
+﻿using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace Raimun.App.Migrations
+{
+    public partial class RaimunApp : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
+
+        }
+
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
+
+        }
+    }
+}
